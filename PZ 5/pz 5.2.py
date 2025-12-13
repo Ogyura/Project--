@@ -13,17 +13,16 @@ def sort_dec3(a, b, c):
         b, c = c, b
     return a, b, c
 
-# Ввод чисел БЕЗ строк
 print("N = ", end="")
-n = int(input())  # просто число, без преобразования строки
+n = int(input()) 
 
 print("Сумма ряда:", sum_series(n))
 
-# Ввод 3 чисел БЕЗ строки с разделителями
 print("Введите 3 числа (каждое с новой строки):")
-x = float(input())  # первое число
-y = float(input())  # второе число  
-z = float(input())  # третье число
+x = float(input())  
+y = float(input())   
+z = float(input())  
 
 x, y, z = sort_dec3(x, y, z)
 print("После сортировки:", x, y, z)
+
