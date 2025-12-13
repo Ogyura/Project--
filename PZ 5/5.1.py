@@ -13,7 +13,7 @@ def sum_series(N):
         i += 1
     return total
 
-# Пример использования
 n = int(input("Введите N для суммирования: "))
 result = sum_series(n)
+
 print(f"Сумма чисел от 1 до {n}: {result}")
