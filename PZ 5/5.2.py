@@ -5,7 +5,6 @@ def sum_series(n):
     return result
 
 def sort_dec3(a, b, c):
-
     if a < b:
         a, b = b, a
     if a < c:
@@ -17,13 +16,13 @@ def sort_dec3(a, b, c):
 print("N = ", end="")
 n = int(input())
 
-print("Сумма ряда:", sum_series(n))
 result = sum_series(n)
+print("Сумма ряда:", result)
 
 print("Введите 3 числа (каждое с новой строки):")
-x = float(input())  
-y = float(input())   
-z = float(input())  
+x = float(input())
+y = float(input())
+z = float(input())
 
 x, y, z = sort_dec3(x, y, z)
 print("После сортировки:", x, y, z)
