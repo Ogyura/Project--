@@ -1,12 +1,11 @@
 def sum_series(n):
     result = 0
-    i = 1
-    while i <= n:
+    for i in range(1, n + 1):
         result += i
-        i += 1
     return result
-    
+
 def sort_dec3(a, b, c):
+
     if a < b:
         a, b = b, a
     if a < c:
@@ -15,15 +14,19 @@ def sort_dec3(a, b, c):
         b, c = c, b
     return a, b, c
 
+print("N = ", end="")
 n = int(input())
 
+print("Сумма ряда:", sum_series(n))
 result = sum_series(n)
 
-x = float(input())
-y = float(input())
-z = float(input())
+print("Введите 3 числа (каждое с новой строки):")
+x = float(input())  
+y = float(input())   
+z = float(input())  
 
 x, y, z = sort_dec3(x, y, z)
+print("После сортировки:", x, y, z)
 
 print(result)
 print(x)
